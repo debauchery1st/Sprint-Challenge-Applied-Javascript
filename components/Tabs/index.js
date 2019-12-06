@@ -20,7 +20,7 @@ function Tab(topic){
 
 const topicsDiv = document.getElementsByClassName("topics").item(0);
 
-const topicPromise = axios.get("https://lambda-times-backend.herokuapp.com/topics")
+const topicPromise = new axios.get("https://lambda-times-backend.herokuapp.com/topics")
 .then((a) => {
     return a.data.topics;
 }).then((b) => {
